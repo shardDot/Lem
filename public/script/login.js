@@ -1,6 +1,11 @@
+import { checkAuth } from './authUI.js'
+
 const form = document.querySelector('form')
+const user = await checkAuth()
 
-
+if (user.isLoggedIn) {
+  window.location.href = '/'
+}
 
 form.addEventListener('submit', async e => {
   e.preventDefault()
