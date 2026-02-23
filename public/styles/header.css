@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+h1,
+a {
+  font-size: 2rem;
+}
